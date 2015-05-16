@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  finishViewController.h
 //  tomato
 //
 //  Created by Julie Lee on 2015/05/16.
@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface finishViewController : UIViewController
 
 @end
-
