@@ -11,7 +11,8 @@
 @interface playViewController : UIViewController
 {
     
-    
+    UIProgressView *progressView;
+    int p;
    
     int number;
     IBOutlet UIImageView *image;

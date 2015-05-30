@@ -12,16 +12,20 @@
 
 @end
 
-@implementation playViewController
+@implementation playViewController{
+
+   
+}
 -(IBAction)plus{
+
     number=number+2;
-    if(number==50){
+    if(number==40){
         image1.alpha = 1.0;
-        image.image =[UIImage imageNamed:@"yjimage.jpeg"];
+        image.image =[UIImage imageNamed:@"images.png"];
         
     }
     if(number==100){
-        image2.alpha = 1.0;
+       image.image =[UIImage imageNamed:@"imgres.jpg"];
     }if(number==150){
         image3.alpha = 1.0;
     }if(number==200){
@@ -38,11 +42,19 @@
         image9.alpha = 1.0;
     }if(number==500){
         image10.alpha = 1.0;
+    }if(number==104){
+        [self performSegueWithIdentifier:@"toFinish" sender:nil];
+
     }
 }
+    
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+ 
+  
+    // プログレスバーをビューに追加
+    [self.view addSubview:progressView];
 }
 
 - (void)didReceiveMemoryWarning {

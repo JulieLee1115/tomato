@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface finishViewController : UIViewController
+-(IBAction)back;
 
 @end

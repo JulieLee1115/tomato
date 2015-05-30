@@ -22,6 +22,10 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+
+}
+-(IBAction)back{
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 /*
